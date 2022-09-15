@@ -8,11 +8,13 @@ Added database backup under project folder with name Ebos Database
 For Manager logIn
 
 username=> Manager	
+
 password=> admin123
 
 
 For Employee logIn
 
 username=>Employee	
+
 password=> emp123
 
