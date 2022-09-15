@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewData["Title"] = "GetManageCalls";
+}
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"></script>
+<br/>
+<p>
+    <a asp-action="Create" asp-controller="Calls" class="btn btn-success">Create New Call</a>
+</p>
+
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table table-bordered table-striped table-responsive table-hover" id="tblCalls">
+            <thead class="bg-primary">
+                <tr>
+                    <th scope="col">Sr No</th>
+                    <th scope="col">Number</th>
+                    <th scope="col">Date Of Call</th>
+                    <th scope="col">Time Of Call</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        bindCallsDatatable();
+    });
+
+    function bindCallsDatatable() {
+        datatable = $('#tblCalls')
+            .DataTable({
+                "sAjaxSource": "/Calls/GetCallsData",
+                "bProcessing": true,
+                "language": {
+                    "emptyTable": "No record found.",
+                    "processing":
+                        '<i class="fa fa-spinner fa-spin fa-3x fa-fw" style="color:#2a2b2b;"></i><span class="sr-only">Loading...</span> '
+                },
+                "columns": [
+                    {
+                        data: 'SrNo',
+                        render: function (data, type, row, meta) {
+                            return meta.row + meta.settings._iDisplayStart + 1;
+                        }
+                    },
+                    {
+                        "data": "customerno",
+                        "autoWidth": true,
+                        "searchable": true
+                    },
+
+                            {
+                                "data": "dateofCall",
+                                "autoWidth": true,
+                                "searchable": true,
+                                "render": function (data) {
+                                    var date = new Date(data);
+                                    var month = date.getMonth() + 1;
+                                    return date.getDate() + "/" + (month.toString().length > 1 ? month : "0" + month) + "/" + date.getFullYear();
+                                }
+                            },
+                            {
+                                "data": "timeofCall",
+                                "autoWidth": true,
+                                "searchable": true,
+
+                    },
+                    {
+                                "data": "subject",
+                                "autoWidth": true,
+                                "searchable": true
+                    },
+                    {
+                        "data": "description",
+                        "autoWidth": true,
+                        "searchable": true
+                    },
+                            {
+                                "title": "Actions",
+                                "data": "callid",
+                                "searchable": false,
+                                "sortable": false,
+                                "render": function (data, type, full, meta) {
+                                    return '<a href="@Url.Action("Edit", "Calls")?id=' + data + '" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i></a> &nbsp; <a class="btn btn-danger" onclick="DeleteRow(' + data + ')"><i class="glyphicon glyphicon-trash"></i></a>';
+                                }
+                            }
+
+                ]
+            });
+    }
+    function DeleteRow(id) {
+    if (confirm("Are You sure to delete this record..?")) {
+        $.ajax({
+           type: 'POST',
+           url: '@Url.Action("Delete", "Calls")',
+           data: { id: id },
+           datatype: 'json',
+            success: function (response) {
+                if (response == "success") {
+
+                    alert("Data Deleted successfully..");
+                    window.location.reload();
+                }
+            },
+            error: function (msg) {
+                alert(msg.responseText);
+            }
+       });
+    }
+}
+</script>

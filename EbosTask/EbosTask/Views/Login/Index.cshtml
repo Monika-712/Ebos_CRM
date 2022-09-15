@@ -1,0 +1,73 @@
+﻿@model EbosTask.Models.LoginModel
+
+@{
+    ViewData["Title"] = "LogIn";
+    Layout = null;
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+<style>
+    .cst-form {
+        background-color: rgba(182, 255, 0, 0.75);
+        border: solid 1px #808080;
+        border-radius: 5px;
+        padding: 3%;
+    }
+
+    .cst-main-form {
+        padding-left: 25%;
+        background: url('~/EbosImages/Images/linus.jpg')
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px
+    }
+</style>
+<div class="container body-content">
+    <br /><br /><br />
+    <div class="row">
+        <div class="cst-main-form">
+
+            <div class="col-md-6 cst-form">
+                <h3><i class="glyphicon glyphicon-user"></i> Welcome Login</h3>
+                <form asp-action="Login" asp-controller="Login" class="form-container">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="username" class="control-label"></label>
+                        <input asp-for="username" class="form-control" />
+                        <span asp-validation-for="username" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="password" class="control-label"></label>
+                        <input asp-for="password" type="password" class="form-control" />
+                        <span asp-validation-for="password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" asp-for="RoleID" asp-items="@(new SelectList(ViewBag.Roles, "RoleID", "RoleType" ))">
+                            <option value="">--Select--</option>
+                        </select>
+                        <span asp-validation-for="RoleID" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Login" class="btn btn-success btn-block" />
+                        @*<input type="reset" value="Reset" class="btn btn-info" />*@
+                    </div>
+                    @if (TempData["LoginError"] != null)
+                    {
+                        <div class="form-group">
+                            <h5 class="text-danger">@TempData["LoginError"]</h5>
+                        </div>
+                    }
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+

@@ -1,0 +1,96 @@
+﻿@model EbosTask.Models.CustomersModel
+
+@{
+    ViewData["Title"] = "EditCustomer";
+}
+<br />
+<div class="btn btn-group-justified bg-danger"><b>Update customer details</b></div>
+<hr />
+@if (ViewBag.error != null)
+{
+    <p class="text-danger">@ViewBag.error</p>
+}
+<div class="row">
+   
+    <form asp-action="EditCustomer">
+        <div class="col-md-5">
+            <input asp-for="CustomerId" class="form-control hidden" value="@Model.CustomerId" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CustomerNo" class="control-label"></label>
+                <input asp-for="CustomerNo" class="form-control" value="@Model.CustomerNo" />
+                <span asp-validation-for="CustomerNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerName" class="control-label"></label>
+                <input asp-for="CustomerName" class="form-control" />
+                <span asp-validation-for="CustomerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Customersurname" class="control-label"></label>
+                <input asp-for="Customersurname" class="form-control" />
+                <span asp-validation-for="Customersurname" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="DateofBirth" class="control-label"></label>
+                <input asp-for="DateofBirth" class="form-control"/>
+                <span asp-validation-for="DateofBirth" class="text-danger"></span>
+            </div>
+        
+        </div>
+        <div class="col-md-5">
+           
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PostCode" class="control-label"></label>
+                <input asp-for="PostCode" class="form-control" />
+                <span asp-validation-for="PostCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="col-75">
+                    <label asp-for="Country" class="control-label"></label>
+                    @*<input asp-for="Country" class="form-control" />*@
+
+                    <select class="form-control" asp-for="Country">
+                        <option value="">--Select--</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Canada">Canada</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                    </select>
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+                <a asp-action="GetCustomer" asp-controller="customer" class="btn btn-default btn-default">Back to List</a>
+            </div>
+        </div>
+    </form>
+    </div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#DateofBirth').datepicker({
+                dateFormat: "dd-m-yy",
+                changeMonth: true,
+                changeYear: true,
+                maxDate: "-18y"
+            });
+
+        });
+    </script>
+}

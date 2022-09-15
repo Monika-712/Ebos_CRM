@@ -1,0 +1,81 @@
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.deps.json
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.runtimeconfig.json
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.runtimeconfig.dev.json
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.dll
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.csproj.CoreCompileInputs.cache
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.RazorAssemblyInfo.cache
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.RazorAssemblyInfo.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.AssemblyInfoInputs.cache
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.AssemblyInfo.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.TagHelpers.input.cache
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.TagHelpers.output.cache
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.RazorCoreGenerate.cache
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.RazorTargetAssemblyInfo.cache
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.RazorTargetAssemblyInfo.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.pdb
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.Views.dll
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.Views.pdb
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.Views.pdb
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.dll
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.pdb
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.csproj.CopyComplete
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Login\LogIn.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Customer.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Customer\GetCustomer.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Customer\EditCustomer.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\CustomerCalls\GetManageCalls.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\CustomerCalls\CreateCall.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\CustomerCalls\EditCall.g.cshtml.cs
+D:\Projects\MVC_Code\Core\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.csprojAssemblyReference.cache
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\appsettings.Development.json
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\appsettings.json
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.deps.json
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.runtimeconfig.json
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.runtimeconfig.dev.json
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.dll
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.pdb
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.Views.dll
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\EbosTask.Views.pdb
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.AssemblyInfoInputs.cache
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.AssemblyInfo.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.csproj.CoreCompileInputs.cache
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.RazorAssemblyInfo.cache
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.RazorAssemblyInfo.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.TagHelpers.input.cache
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.TagHelpers.output.cache
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.RazorCoreGenerate.cache
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Calls\Create.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Calls\Index.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Customer\Customer.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Customer\EditCustomer.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Customer\GetCustomer.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.RazorTargetAssemblyInfo.cache
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.RazorTargetAssemblyInfo.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.Views.pdb
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.dll
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.pdb
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.genruntimeconfig.cache
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.csproj.CopyComplete
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Login\Index.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Calls\Edit.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Reports\Index.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CallSummary.cshtml.g.cs
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\obj\Debug\netcoreapp2.1\EbosTask.csproj.AssemblyReference.cache
+E:\Dot Net Practices\My Projects\EbosTask\EbosTask\EbosTask\bin\Debug\netcoreapp2.1\epengine.dll

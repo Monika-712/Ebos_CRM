@@ -1,0 +1,65 @@
+﻿@model IEnumerable<EbosTask.Models.CallsModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {
+            $("input[name='ExportData']").val($("#tblCustomers").html());
+        });
+    });
+</script>
+<br />
+<form method="post" asp-controller="Reports" asp-action="ExportExcel">
+    <input type="hidden" name="ExportData" id="ExportData" />
+    <input type="submit" id="btnSubmit" value="Export Report" class="btn btn-primary" />
+    <a asp-action="GetCustomer" asp-controller="customer" class="btn btn-default btn-default">Back to List</a>
+</form>
+<hr />
+<table class="table" id="tblCustomers">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Customerno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateofCall)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TimeofCall)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customerno)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateofCall)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TimeofCall)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Subject)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+              
+            </tr>
+        }
+    </tbody>
+</table>

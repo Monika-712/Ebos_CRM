@@ -1,0 +1,141 @@
+﻿@model IEnumerable<EbosTask.Models.CustomersModel>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"></script>
+
+@{
+    ViewData["Title"] = "GetCustomer";
+}
+
+
+@*<h2>@ViewBag.AlertMsg</h2>*@
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10" style="color:green">
+        @ViewBag.AlertMsg
+
+    </div>
+</div>
+
+<p>
+    <a asp-action="Customer" class="btn btn-success">Create New Customer</a>
+</p>
+
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table table-bordered table-striped table-responsive table-hover" id="tblCustomers">
+            <thead class="bg-primary">
+                <tr>
+                    <th scope="col">Sr No</th>
+                    <th scope="col">Numbers</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">PostCode</th>
+                    <th scope="col">Country</th>
+                    <th scope="col">Date of Birth</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+            $(document).ready(function () {
+                bindDatatable();
+            });
+
+            function bindDatatable() {
+                datatable = $('#tblCustomers')
+                    .DataTable({
+                        "sAjaxSource": "/Customer/GetCustomerData",
+                        "bProcessing": true,
+                        "language": {
+                            "emptyTable": "No record found.",
+                            "processing":
+                                '<i class="fa fa-spinner fa-spin fa-3x fa-fw" style="color:#2a2b2b;"></i><span class="sr-only">Loading...</span> '
+                        },
+                        "columns": [
+                            {
+                                data: 'SrNo',
+                                render: function (data, type, row, meta) {
+                                    return meta.row + meta.settings._iDisplayStart + 1;
+                                }
+                            },
+                            {
+                                "data": "customerNo",
+                                "autoWidth": true,
+                                "searchable": true,
+                                //"data": "customerNo", render: function (toFormat) {
+                                //    return toFormat.toString().replace(
+                                //        /(\d\d\d)(\d\d\d)(\d\d\d\d)/g, '$1-$2-$3'
+                                //    );
+                                //}
+                            },
+                            {
+                                "autoWidth": true,
+                                "searchable": true,
+                                "data": function (row, type, val, meta) {
+                                    return row.customerName + " " + row.customersurname;
+                                }
+
+                            },
+                            {
+                                "data": "address",
+                                "autoWidth": true,
+                                "searchable": true
+                            },
+                            {
+                                "data": "postCode",
+                                "autoWidth": true,
+                                "searchable": true
+                            }, {
+                                "data": "country",
+                                "autoWidth": true,
+                                "searchable": true
+                            },
+                            {
+                                "data": "dateofBirth",
+                                "autoWidth": true,
+                                "searchable": true,
+                                "render": function (data) {
+                                    var date = new Date(data);
+                                    var month = date.getMonth() + 1;
+                                    return date.getDate() + "/" + (month.toString().length > 1 ? month : "0" + month) + "/" + date.getFullYear();
+                                }
+                            },
+                            {
+                                "title": "Actions",
+                                "data": "customerId",
+                                "searchable": false,
+                                "sortable": false,
+                                "render": function (data, type, full, meta) {
+                                    return '<a href="@Url.Action("EditCustomer", "Customer")?id=' + data + '" class="btn btn-success"><i class="glyphicon glyphicon-pencil"></i></a> &nbsp;  <a class="btn btn-danger" id="CustomerRow" value="'+ data +'" onclick="DeleteCustomerRow()"><i class="glyphicon glyphicon-trash"></i></a>';
+                                }
+                            }
+                        ]
+                    });
+            }
+    function DeleteCustomerRow() {
+        let id = document.getElementById("CustomerRow").getAttribute('value');
+        if (id != null && id != undefined) {
+            if (confirm("Are You sure to delete this record..?")) {
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("DeleteCustomer", "Customer")',
+                    data: { id: id },
+                    datatype: 'json',
+                    success: function (response) {
+                        if (response == "success") {
+
+                            alert("Data Deleted successfully..");
+                            window.location.reload();
+                        }
+                    },
+                    error: function (msg) {
+                        alert(msg.responseText);
+                    }
+                });
+            }
+        }
+    }
+</script>

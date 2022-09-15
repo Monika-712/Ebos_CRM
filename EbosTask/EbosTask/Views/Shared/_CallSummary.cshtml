@@ -1,0 +1,67 @@
+﻿@model IEnumerable<EbosTask.Models.CallsModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table" id="tblCustomers">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Callid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Customerno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateofCall)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TimeofCall)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Callid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customerno)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateofCall)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TimeofCall)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Subject)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
